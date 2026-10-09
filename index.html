@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Droxilo Shop — هودي Toji Fushiguro بإصدار Streetwear مظلم. جودة ثقيلة، قصة Oversize حقيقية، ودفع عند الاستلام في المغرب.">
+<title>Droxilo Shop | Toji Fushiguro Hoodie</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap');
+
+:root{
+  --bg:#080808;
+  --bg2:#0e0e0e;
+  --card:#111111;
+  --gold:#d7ad63;
+  --gold2:#f0d092;
+  --cream:#f6efe3;
+  --muted:#a8a39b;
+  --line:rgba(215,173,99,.22);
+  --white:#fff;
+  --green:#25d366;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(circle at 80% 0%,rgba(215,173,99,.12),transparent 28%),
+    radial-gradient(circle at 10% 35%,rgba(255,255,255,.035),transparent 25%),
+    var(--bg);
+  color:var(--cream);
+  font-family:"Cairo",system-ui,sans-serif;
+  line-height:1.7;
+}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(1180px,92%);margin:auto}
+.gold{color:var(--gold2)}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  color:var(--gold2);font-size:13px;font-weight:800;
+  letter-spacing:1.5px;text-transform:uppercase;
+}
+.eyebrow:before{content:"";width:28px;height:1px;background:var(--gold)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  border:0;border-radius:10px;padding:15px 24px;
+  font-weight:900;font-size:15px;cursor:pointer;
+  transition:.25s ease;
+}
+.btn-gold{
+  color:#111;
+  background:linear-gradient(135deg,#f1d69e,#c99845);
+  box-shadow:0 12px 35px rgba(215,173,99,.2);
+}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(215,173,99,.3)}
+.btn-dark{border:1px solid var(--line);background:#111;color:var(--cream)}
+.btn-dark:hover{border-color:var(--gold);transform:translateY(-2px)}
+header{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(16px);
+  background:rgba(8,8,8,.78);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{width:78px;filter:drop-shadow(0 0 12px rgba(215,173,99,.18))}
+.navlinks{display:flex;gap:28px;color:#c6c0b7;font-size:14px}
+.navlinks a:hover{color:var(--gold2)}
+.hero{padding:62px 0 70px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+.hero h1{
+  font-family:"Playfair Display","Cairo",serif;
+  font-size:clamp(42px,5.4vw,76px);line-height:1.08;
+  letter-spacing:-2px;margin:18px 0 20px;color:#fff;
+}
+.hero h1 span{display:block;color:var(--gold2)}
+.hero p{color:#b9b4ac;font-size:18px;max-width:650px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0 22px}
+.micro-trust{display:flex;gap:18px;flex-wrap:wrap;color:#a9a49c;font-size:13px}
+.micro-trust span{display:flex;gap:7px;align-items:center}
+.micro-trust b{color:var(--gold2)}
+.hero-visual{position:relative}
+.product-frame{
+  min-height:550px;border:1px solid var(--line);border-radius:28px;
+  background:
+    radial-gradient(circle at 50% 30%,rgba(215,173,99,.16),transparent 35%),
+    linear-gradient(145deg,#171717,#080808);
+  display:grid;place-items:center;position:relative;overflow:hidden;
+  box-shadow:inset 0 0 70px rgba(0,0,0,.7),0 25px 70px rgba(0,0,0,.35);
+}
+.product-frame:before{
+  content:"";position:absolute;inset:20px;border:1px solid rgba(255,255,255,.05);border-radius:22px;
+}
+.hero-hoodie{width:88%;max-width:520px;mix-blend-mode:screen;filter:contrast(1.05) drop-shadow(0 25px 30px rgba(0,0,0,.6))}
+.badge{
+  position:absolute;top:22px;right:22px;
+  background:rgba(8,8,8,.78);border:1px solid var(--line);
+  padding:8px 13px;border-radius:999px;color:var(--gold2);font-size:12px;font-weight:800;
+}
+.price-card{
+  position:absolute;bottom:22px;left:22px;
+  background:rgba(10,10,10,.9);border:1px solid var(--line);
+  padding:13px 18px;border-radius:14px;min-width:150px;
+}
+.price-card small{display:block;color:#8e8981;font-size:11px}
+.price{font-size:30px;font-weight:900;color:#fff;line-height:1.2}
+.price del{font-size:13px;color:#777;margin-right:7px}
+.section{padding:88px 0}
+.section-head{max-width:760px;margin-bottom:38px}
+.section-head h2{
+  font-family:"Playfair Display","Cairo",serif;
+  font-size:clamp(32px,4vw,50px);line-height:1.2;margin:12px 0;color:#fff;
+}
+.section-head p{color:#a8a39b}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{
+  background:linear-gradient(145deg,#131313,#0c0c0c);
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:18px;padding:26px;
+}
+.feature-icon{
+  width:48px;height:48px;border-radius:13px;display:grid;place-items:center;
+  border:1px solid var(--line);color:var(--gold2);font-size:21px;margin-bottom:17px;
+}
+.card h3{font-size:19px;margin-bottom:8px;color:#fff}
+.card p{color:#99938a;font-size:14px}
+.product-details{background:#0c0c0c;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
+.gallery{display:grid;grid-template-columns:1.05fr .95fr;gap:18px}
+.gallery-card{
+  background:#111;border:1px solid rgba(255,255,255,.07);border-radius:22px;overflow:hidden;
+  min-height:460px;display:flex;align-items:center;justify-content:center;
+}
+.gallery-card img{width:100%;height:100%;object-fit:contain;padding:28px}
+.gallery-card.print{background:#f6f6f4}
+.gallery-card.print img{padding:0;object-fit:contain;max-height:540px}
+.specs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.spec-box{border:1px solid rgba(255,255,255,.07);background:#101010;border-radius:18px;padding:22px}
+.spec-box h4{color:#8e8981;font-size:12px;margin-bottom:7px}
+.spec-box strong{font-size:18px;color:#fff}
+.sizes{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.size{min-width:48px;text-align:center;padding:8px 12px;border:1px solid var(--line);border-radius:8px;color:#ddd;font-weight:800}
+.offer{
+  padding:70px 0;
+  background:linear-gradient(135deg,rgba(215,173,99,.12),transparent 45%),#0b0b0b;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.offer-grid{display:grid;grid-template-columns:1fr .8fr;gap:40px;align-items:center}
+.offer h2{font-family:"Playfair Display","Cairo",serif;font-size:clamp(35px,4.5vw,58px);line-height:1.15;color:#fff}
+.offer h2 span{color:var(--gold2)}
+.offer-copy{color:#a9a39b;margin:15px 0 22px}
+.order-card{
+  border:1px solid var(--line);background:rgba(15,15,15,.95);border-radius:22px;padding:25px;
+}
+.order-card .big-price{font-size:45px;font-weight:900;color:#fff}
+.order-card .big-price small{font-size:14px;color:#777;font-weight:600}
+.field{margin:10px 0}
+.field input,.field select{
+  width:100%;padding:13px 14px;border-radius:10px;
+  border:1px solid rgba(255,255,255,.1);background:#090909;color:#eee;
+  outline:none;font-family:inherit;
+}
+.field input:focus,.field select:focus{border-color:var(--gold)}
+.order-note{font-size:11px;color:#777;margin-top:10px}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.trust-item{display:flex;gap:12px;align-items:flex-start;padding:18px;border-radius:16px;background:#101010;border:1px solid rgba(255,255,255,.06)}
+.trust-item b{display:block;color:#fff;font-size:14px}
+.trust-item span{font-size:12px;color:#858078}
+.trust-icon{color:var(--gold2);font-size:20px}
+.reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.review{padding:22px;border-radius:17px;border:1px solid rgba(255,255,255,.07);background:#101010}
+.stars{color:#e2b85f;letter-spacing:2px;font-size:14px;margin-bottom:8px}
+.review p{color:#c4beb4;font-size:14px}
+.review .name{color:#fff;font-weight:800;margin-top:12px;font-size:13px}
+.faq{max-width:850px}
+details{border-bottom:1px solid rgba(255,255,255,.08);padding:18px 0}
+summary{cursor:pointer;font-weight:800;color:#eee}
+details p{color:#918b83;padding-top:10px;font-size:14px}
+footer{padding:42px 0 90px;border-top:1px solid rgba(255,255,255,.06)}
+.footer-grid{display:flex;justify-content:space-between;gap:25px;align-items:center}
+.footer-brand{display:flex;gap:14px;align-items:center}
+.footer-brand img{width:55px}
+.footer-brand p{color:#777;font-size:12px;max-width:420px}
+.copyright{color:#68635d;font-size:12px}
+.sticky-cta{
+  display:none;position:fixed;bottom:0;left:0;right:0;z-index:80;
+  background:rgba(8,8,8,.94);backdrop-filter:blur(15px);
+  border-top:1px solid var(--line);padding:10px;
+}
+.sticky-cta .btn{width:100%}
+@media(max-width:900px){
+  .hero-grid,.offer-grid,.gallery{grid-template-columns:1fr}
+  .hero{padding-top:35px}
+  .hero-visual{order:-1}
+  .product-frame{min-height:430px}
+  .features,.trust{grid-template-columns:1fr}
+  .reviews{grid-template-columns:1fr}
+  .navlinks{display:none}
+}
+@media(max-width:600px){
+  .container{width:min(94%,1180px)}
+  .nav{height:66px}
+  .logo{width:62px}
+  .hero h1{font-size:42px}
+  .hero p{font-size:15px}
+  .product-frame{min-height:370px;border-radius:20px}
+  .hero-hoodie{width:95%}
+  .price-card{bottom:14px;left:14px}
+  .badge{top:14px;right:14px}
+  .section{padding:62px 0}
+  .specs{grid-template-columns:1fr}
+  .footer-grid{flex-direction:column;align-items:flex-start}
+  .sticky-cta{display:block}
+  body{padding-bottom:70px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#" aria-label="Droxilo Shop"><img class="logo" src="assets/logo.png" alt="Droxilo Shop"></a>
+    <nav class="navlinks">
+      <a href="#details">التفاصيل</a>
+      <a href="#benefits">المميزات</a>
+      <a href="#reviews">آراء الزبناء</a>
+      <a href="#order">اطلب دابا</a>
+    </nav>
+    <a class="btn btn-gold" href="#order">اطلب دابا ⚡</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">DROXILO SHOP · LIMITED DROP</div>
+      <h1>الهيبة ما كتشرحش…<span>كتبان. 🖤</span></h1>
+      <p>هودي <b class="gold">Toji Fushiguro</b> بإصدار Streetwear مظلم، بقصة Oversize حقيقية وثوب ثقيل كيعطيك اللوك لي كنت كتقلب عليه.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#order">🛒 اطلب نسختك الآن — الكمية محدودة</a>
+        <a class="btn btn-dark" href="#details">شوف التفاصيل ↓</a>
+      </div>
+      <div class="micro-trust">
+        <span>✓ <b>249 DH</b> فقط</span>
+        <span>✓ الدفع عند الاستلام</span>
+        <span>✓ التوصيل لجميع مدن المغرب</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="product-frame">
+        <span class="badge">SPECIAL DROP · TOJI</span>
+        <img class="hero-hoodie" src="assets/hoodie-front.jpg" alt="هودي أسود Toji Fushiguro">
+        <div class="price-card">
+          <small>ثمن الدروب</small>
+          <div class="price">249 DH <del>299 DH</del></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="benefits">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">WHY THIS HOODIE</div>
+      <h2>ماشي غير Hoodie… <span class="gold">هادشي Style.</span></h2>
+      <p>كل تفصيلة معمولة باش تجمع بين الراحة، اللوك القوي، والإحساس ديال Streetwear الحقيقي.</p>
+    </div>
+    <div class="features">
+      <article class="card">
+        <div class="feature-icon">✦</div>
+        <h3>100% قطن — Heavyweight</h3>
+        <p>قطن نقي بوزن ثقيل كيعطيك دفء وراحة وإحساس فاخر فاللبس، خصوصاً فالأيام الباردة.</p>
+      </article>
+      <article class="card">
+        <div class="feature-icon">◒</div>
+        <h3>Oversize حقيقي</h3>
+        <p>قصة واسعة مع Drop Shoulder باش يجيك الستايل ديال Streetwear مضبوط بلا ما يبان عادي.</p>
+      </article>
+      <article class="card">
+        <div class="feature-icon">✧</div>
+        <h3>طباعة High-Definition</h3>
+        <p>غرافيك واضح ونقي ومصمم باش يحافظ على اللوك ديالو مع الاستعمال والغسل المتكرر.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section product-details" id="details">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">THE DETAILS</div>
+      <h2>من كل زاوية، <span class="gold">كيبان الفرق.</span></h2>
+      <p>شوف القصة الأمامية وتفاصيل الغرافيك الخلفي قبل ما تطلب.</p>
+    </div>
+    <div class="gallery">
+      <div class="gallery-card">
+        <img src="assets/hoodie-front.jpg" alt="تفاصيل الهودي الأسود من الأمام">
+      </div>
+      <div class="gallery-card print">
+        <img src="assets/back-print.png" alt="تصميم الطباعة الخلفية Toji Fushiguro">
+      </div>
+    </div>
+    <div class="specs">
+      <div class="spec-box">
+        <h4>المقاسات</h4>
+        <strong>اختار المقاس ديالك</strong>
+        <div class="sizes">
+          <span class="size">S</span><span class="size">M</span><span class="size">L</span>
+          <span class="size">XL</span><span class="size">2XL</span>
+        </div>
+      </div>
+      <div class="spec-box">
+        <h4>الدروب</h4>
+        <strong>Toji Fushiguro · Special Edition</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">ZERO RISK</div>
+      <h2>طلبك ساهل، <span class="gold">وبلا صداع.</span></h2>
+    </div>
+    <div class="trust">
+      <div class="trust-item"><div class="trust-icon">₿</div><div><b>الدفع عند الاستلام</b><span>خلص ملي توصلك القبية وتقدر تفحصها بيدك.</span></div></div>
+      <div class="trust-item"><div class="trust-icon">⚡</div><div><b>توصيل سريع</b><span>متوفر لجميع مدن المغرب.</span></div></div>
+      <div class="trust-item"><div class="trust-icon">↺</div><div><b>ضمان الإبدال</b><span>المقاس ما ناسبكش؟ تواصل معنا للإبدال بسهولة.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="offer" id="order">
+  <div class="container offer-grid">
+    <div>
+      <div class="eyebrow">LIMITED-TIME OFFER</div>
+      <h2>دابا بـ <span>249 درهم</span> فقط.</h2>
+      <p class="offer-copy">عرض خاص على هاد الدروب. اختار المقاس ديالك وخلي معلومات التواصل، وغادي يتأكد الطلب معاك عبر واتساب.</p>
+      <div class="micro-trust">
+        <span>✓ الدفع عند الاستلام</span>
+        <span>✓ توصيل المغرب كامل</span>
+        <span>✓ إبدال المقاس</span>
+      </div>
+    </div>
+    <div class="order-card">
+      <div style="color:#8f8981;font-size:12px">الثمن النهائي</div>
+      <div class="big-price">249 DH <small>شامل العرض</small></div>
+      <form id="orderForm">
+        <div class="field"><input id="name" required placeholder="الاسم الكامل"></div>
+        <div class="field"><input id="phone" required type="tel" placeholder="رقم الهاتف"></div>
+        <div class="field">
+          <select id="size" required>
+            <option value="">اختار المقاس</option>
+            <option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option>
+          </select>
+        </div>
+        <button class="btn btn-gold" style="width:100%" type="submit">🛒 اطلب القبية دابا</button>
+        <div class="order-note">تأكيد سريع عبر واتساب · الدفع عند الاستلام</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">CUSTOMER LOVE</div>
+      <h2>شنو قالو <span class="gold">الزبناء؟</span></h2>
+      <p>آراء مقدمة من العلامة التجارية، بالدارجة المغربية.</p>
+    </div>
+    <div class="reviews">
+      <article class="review"><div class="stars">★★★★★</div><p>“الطباعة نقية بزاف وما كتمشيش مع الغسل، واللون الأسود غامق وفخم. بصراحة يستاهل كل درهم وتجربة مأمونة 100%.”</p><div class="name">أمين — مراكش</div></article>
+      <article class="review"><div class="stars">★★★★★</div><p>“التوصيل وصلني في الوقت وبنفس الجودة لي متوقعها.”</p><div class="name">مهدي — الدار البيضاء</div></article>
+      <article class="review"><div class="stars">★★★★★</div><p>“المداومة والراحة فيه خطيرة، وبصراحة هاد الستايل هو لي كان خاصنا.”</p><div class="name">حمزة — طنجة</div></article>
+      <article class="review"><div class="stars">★★★★★</div><p>“التوصيل وصلني في الوقت وبنفس الجودة لي متوقعها والثوب ثقيل بزاف ومريح فالحركة.”</p><div class="name">عمر — الرباط</div></article>
+      <article class="review"><div class="stars">★★★★★</div><p>“كنقلب شحال هادي على Streetwear حقيقي فالمغرب وما لقيتش شي حاجة بهاد الاتقان. القصة الأوفرسايز ضبطوها خطيرة.”</p><div class="name">ياسين — فاس</div></article>
+      <article class="review"><div class="stars">★★★★★</div><p>“الطباعة نقية ومكتحيدش مع الغسل، واللون الأسود غامق وفخم كيبان براند عالمي.”</p><div class="name">سفيان — أكادير</div></article>
+      <article class="review"><div class="stars">★★★★★</div><p>“من احسن المتاجر لي تعاملت معاهم، المعاملة نقية والجودة ديال الثوب واضحة من اللمسة الأولى.”</p><div class="name">أيوب — طنجة</div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:20px">
+  <div class="container faq">
+    <div class="section-head">
+      <div class="eyebrow">FAQ</div>
+      <h2>أسئلة <span class="gold">سريعة.</span></h2>
+    </div>
+    <details><summary>واش نقدر نخلص عند الاستلام؟</summary><p>نعم، الدفع عند الاستلام متوفر. كتخلص ملي توصلك القبية.</p></details>
+    <details><summary>شنو هي المقاسات المتوفرة؟</summary><p>S و M و L و XL و 2XL.</p></details>
+    <details><summary>واش كاين الإبدال إلا المقاس ما ناسبنيش؟</summary><p>نعم، كاين ضمان الإبدال. تواصل معانا باش ننسقو العملية.</p></details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="Droxilo Shop">
+      <p>Droxilo Shop — Streetwear مظلم للشباب اللي ما كيرضاش يكون بحال الجميع. جودة، قصة، وهوية فكل Drop.</p>
+    </div>
+    <div class="copyright">© 2026 Droxilo Shop. جميع الحقوق محفوظة.</div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a class="btn btn-gold" href="#order">🛒 اطلب دابا بـ 249 DH</a>
+</div>
+
+<script>
+// مهم: عوّض الرقم التالي برقم واتساب المتجر بصيغة دولية بدون + أو مسافات.
+const WHATSAPP_NUMBER = "212600000000";
+
+document.getElementById("orderForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  if (WHATSAPP_NUMBER === "212702402991") {
+    alert("قبل النشر، عوّض WHATSAPP_NUMBER برقم واتساب المتجر.");
+    return;
+  }
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const size = document.getElementById("size").value;
+  const message = `سلام Droxilo Shop 👋%0Aبغيت نطلب Hoodie Toji Fushiguro.%0Aالاسم: ${encodeURIComponent(name)}%0Aالهاتف: ${encodeURIComponent(phone)}%0Aالمقاس: ${encodeURIComponent(size)}%0Aالثمن: 249 DH%0Aالدفع عند الاستلام.`;
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
+});
+</script>
+</body>
+</html>
